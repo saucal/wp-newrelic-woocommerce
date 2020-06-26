@@ -1,0 +1,14 @@
+{
+	"name"        : "saucal/wp-newrelic-woocommerce",
+	"description" : "New Relic APM reports for WooCommerce.",
+	"keywords"    : ["wordpress","woocommerce"],
+	"homepage"    : "https://github.com/saucal/wp-newrelic-woocommerce/",
+	"type"        : "wordpress-plugin",
+	"authors"     : [
+	  {
+		"name"     : "SAU/CAL",
+		"email"    : "info@saucal.com",
+		"homepage" : "https://saucal.com"
+	  }
+	]
+  }
