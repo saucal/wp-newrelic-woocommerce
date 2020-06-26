@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: New Relic Reporting for WooCommerce
- * Description: New Relic APM reports for WordPress. Requires "New Relic Reporting for WordPress" by 10up
+ * Description: New Relic APM reports for WooCommerce. Requires "New Relic Reporting for WordPress" by 10up
  * Version:     1.2
  * Author:      SAU/CAL
  * Author URI:  https://saucal.com
