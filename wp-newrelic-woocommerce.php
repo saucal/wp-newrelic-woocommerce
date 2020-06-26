@@ -20,6 +20,7 @@ class WP_NewRelic_WooCommerce {
 		add_filter( 'wp_nr_transaction_name', array( $this, 'set_transaction_name' ) );
 		add_action( 'init', array( $this, 'set_user_type' ) );
 		add_filter( 'wp_nr_app_name', array( $this, 'separate_cron' ) );
+		add_action( 'woocommerce_checkout_order_processed', array( $this, 'set_order_id' ) );
 	}
 
 	public function set_transaction_name( $transaction ) {
@@ -43,6 +44,10 @@ class WP_NewRelic_WooCommerce {
 				$this->add_custom_parameter( 'user_type', 'admin' );
 			}
 		}
+	}
+
+	public function set_order_id( $order_id ) {
+		$this->add_custom_parameter( 'order_id', $order_id );
 	}
 
 	/**
